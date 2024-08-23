@@ -21,25 +21,22 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
+              },
+              fontFamily:{
+                manrope: ['manrope', 'sans-serif'],
+              },
             }
           }
         }
       </script>
-    <style>
-        .manrope{
-        font-family: "Manrope", sans-serif;
-        font-style: normal;
-        }
-    </style>
 </head>
-<body>
+<body class="font-manrope">
     <main class="max-w-screen-2xl mx-auto px-8 pt-7 pb-4 lg:px-20">
         <!-- header section part -->
         <header class="lg:flex pt-10 md:pt-10 lg:pb-10 justify-center ">
             <!-- header text part -->
             <div class="">
-                <h1 class="text-5xl md:text-7xl font-bold text-left">It's good <br>
+                <h1 class="text-5xl md:text-7xl font-bold text-left ">It's good <br>
                     tea time at The <br>
                     Tea House</h1>
                     <p class="text-gray-500 my-8 text-xl">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
@@ -52,7 +49,7 @@
                 </div>
 
                 <!-- cart part -->
-                <div class="flex items-center px-5 gap-x-3 shadow-lg rounded-lg py-5 px-6 absolute top-28 md:top-96 md:left-32 lg:left-20 z-10 bg-white">
+                <div class="flex items-center px-5 gap-x-3 shadow-lg rounded-lg py-5 px-6 md:absolute top- md:top-96 md:left-32 lg:left-20 z-10 bg-white">
                     <div><i class="fa-solid fa-star text-amber-400"></i></div>
                     <div>
                         <h1 class="text-2xl font-bold">5.00</h1>
@@ -182,6 +179,87 @@
             </div>
           </section>
 
+          <!-- News section -->
+           <section class="py-10">
+            <div>
+                <h1 class="font-bold text-4xl lg:text-6xl text-center"> News & Events</h1>
+                <p class="md:text-xl mt-4 w-full lg:w-3/4 mx-auto text-center text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                <!-- news part -->
+                 <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-10">
+                    <!-- news items -->
+                     <div class="p-6 rounded-xl border-solid border border-[#dbdbdb]">
+                        <img class="mb-4 w-full" src="images/news-1.png" alt="">
+                        <h3 class="text-xl text-gray-500 mb-2">Feb 05, 2022</h3>
+                        <h1 class="text-3xl font-bold">Collecting 8 points for discount</h1>
+                        <p class="text-gray-500 mt-3 mb-3 text-xl">There are many variations of passages of Lorem Ipsum available.</p>
+                        <button class="font-bold text-lg">Learn More</button>
+                     </div>
+                     <div class="p-6 rounded-xl border-solid border border-[#dbdbdb]">
+                        <img class="mb-4 w-full" src="images/news-2.png" alt="">
+                        <h3 class="text-xl text-gray-500 mb-2">Feb 05, 2022</h3>
+                        <h1 class="text-3xl font-bold">Collecting 8 points for discount</h1>
+                        <p class="text-gray-500 mt-3 mb-3 text-xl">There are many variations of passages of Lorem Ipsum available.</p>
+                        <button class="font-bold text-lg">Learn More</button>
+                     </div>
+                     <div class="p-6 rounded-xl border-solid border border-[#dbdbdb]">
+                        <img class="mb-4 w-full" src="images/news-3.png" alt="">
+                        <h3 class="text-xl text-gray-500 mb-2">Feb 05, 2022</h3>
+                        <h1 class="text-3xl font-bold">Collecting 8 points for discount</h1>
+                        <p class="text-gray-500 mt-3 mb-3 text-xl">There are many variations of passages of Lorem Ipsum available.</p>
+                        <button class="font-bold text-lg">Learn More</button>
+                     </div>
+                 </div>
+            </div>
+           </section>
     </main>
+    <!-- Footer section -->
+     <footer class=" bg-gradient-to-r from-[#FF8938]/10 to-[#FF0000]/10 py-10 px-4 md;px-16">
+        <div class="w-9/12 mx-auto px-10">
+                <!-- logo part -->
+            <div class=" mb-8 flex justify-between">
+                 <img class="mb-8" src="images/cup.png" alt="">
+                 <div class="flex items-center gap-5 text-lg">
+                    <h2 class="text-gray-500 text-xl">Ready to get started?</h2>
+                    <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-4 py-2 rounded-xl text-white">Get Started</button>
+                 </div>
+            </div>
+            <!-- footer link part -->
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- first column -->
+                 <div class="">
+                    <h1 class="text-xl font-bold mb-4">Quick Links</h1>
+                 <!-- link part -->
+                  <ul class="space-y-2">
+                    <li><a class="hover:text-orange-500" href="#">Home</a></li>
+                    <li><a class="hover:text-orange-500" href="#">About Us</a></li>
+                    <li><a class="hover:text-orange-500" href="#">Insurance</a></li>
+                    <li><a class="hover:text-orange-500" href="#">Privacy Policy</a></li>
+                  </ul>
+                 </div>
+                 <!-- second column -->
+                 <div class="">
+                    <h1 class="text-xl font-bold mb-4">Our Service</h1>
+                 <!-- link part -->
+                  <ul class="space-y-2">
+                    <li><a class="hover:text-orange-500" href="#">Life Insurance</a></li>
+                    <li><a class="hover:text-orange-500" href="#">Car Insurance</a></li>
+                    <li><a class="hover:text-orange-500" href="#">Health Insurance</a></li>
+                    <li><a class="hover:text-orange-500" href="#">House Insurance</a></li>
+                  </ul>
+                 </div>
+                 <!-- third column -->
+                 <div class="">
+                    <h1 class="text-xl font-bold mb-4">Help</h1>
+                 <!-- link part -->
+                  <ul class="space-y-2">
+                    <li><a class="hover:text-orange-500" href="#">FAQs</a></li>
+                    <li><a class="hover:text-orange-500" href="#">Contact Us</a></li>
+                  </ul>
+                 </div>
+             </div>
+             </div>
+             </div>
+        </div>
+     </footer>
 </body>
 </html>
